@@ -1,0 +1,34 @@
+{
+  "name": "scope-global-styles",
+  "version": "0.0.3",
+  "description": "Applies a selector to all global styles to allow apps to not have any styles leaked",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bh3605/scope-global-styles.git"
+  },
+  "keywords": [
+    "postcss",
+    "global-styles",
+    "selector",
+    "webpack",
+    "css",
+    "sass"
+  ],
+  "author": "Hair, Bryson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bh3605/scope-global-styles/issues"
+  },
+  "homepage": "https://github.com/bh3605/scope-global-styles#readme",
+  "peerDependencies": {
+    "css-loader": "^6.7.3",
+    "postcss-loader": "^7.0.2",
+    "postcss-prefix-selector": "^1.16.0",
+    "sass": "^1.58.1",
+    "sass-loader": "^13.2.0"
+  }
+}
