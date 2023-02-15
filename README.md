@@ -29,6 +29,7 @@ return webpack;
 ## Options
 
 | Name | Type | Description |
+|------|------|-------------|
 | prefix | string | The string to prepend to every CSS selector. |
 | webpack | object | Webpack configuration object |
 | ngJson | object | json object of your angular.json file |
