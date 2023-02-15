@@ -1,7 +1,7 @@
 module.exports = function scopeGlobalStypes(prefix, webpackConfig, ngJson) {
     const projectName = singleSpaWebpackConfig.output.uniqueName;
     const project = ngJson.projects[projectName];
-    if(!project || project.architect?.build?.options?.styles.length < 1) {
+    if(project && project.architect.build.options && project.architect.build.options.styles.length < 1) {
         return;
     }
     const { entryPoints, noInjectNames } = normalizeGlobalStyles(project.architect.build.options.styles);
