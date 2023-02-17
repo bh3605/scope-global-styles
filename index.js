@@ -1,5 +1,5 @@
 module.exports = function scopeGlobalStypes(prefix, webpackConfig, ngJson) {
-    const projectName = webpackConfig.output.libraryName;
+    const projectName = webpackConfig.output.library;
     const project = ngJson.projects[projectName];
     if(!project) {
         throw new Error("Could not find project.");
