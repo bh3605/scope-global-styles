@@ -1,6 +1,6 @@
 {
   "name": "scope-global-styles",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Applies a selector to all global styles to allow apps to not have any styles leaked",
   "main": "index.js",
   "scripts": {
