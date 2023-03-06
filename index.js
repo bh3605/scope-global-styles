@@ -10,7 +10,7 @@ module.exports = function scopeGlobalStypes(prefix, webpackConfig, ngJson) {
     const { entryPoints, noInjectNames } = normalizeGlobalStyles(project.architect.build.options.styles);
     const filePathRoot = webpackConfig.resolve.modules[0].split("/").join("\\") + "\\";
     for(let i = 0; i < entryPoints.styles.length; i++) {
-        entryPoints.styles[i] = filePathRoot + entryPoints.styles[i].replace("/", "\\");
+        entryPoints.styles[i] = filePathRoot + entryPoints.styles[i].split("/").join("\\");
     }
 
     const postcssPrefixSelector = {
